@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Public+Sans:wght@100;200;400;600&family=Ubuntu&family=Ysabeau+SC:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Geologica:wght@300&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2D3047;
+    overflow-x: hidden;
+  }
+  
+  /* ================================= Navbar css starts ================================== */
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar-container {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+
+    align-items: center;
+
+    width: 97%;
+    height: 8vh;
+    margin: 10px 0 0 0;
+
+    border-radius: 15px;
+    
+    background-color: #606C5D;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: rgb(117, 116, 116) 0px 5px 15px; */
+    padding: 0 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .item-list {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item-list li{
+    margin: 0 2rem;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Geologica', sans-serif;
+  }
+
+  .item-list li:last-child {
+    margin-right: 4vw;
+  }
+  /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+
+
+  /* ================================= Navbar css ends================================== */
+
+
+  /* ================================= Hero css starts ================================== */
+
+  .hero{
+    /* dimensions*/
+    width: inherit;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0 0 0 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    /*hero background*/
+    background-image: url('../assets/bg1.png');
+    background-color: rgb(228, 233, 190);    
+
+    /* background: hsla(0, 100%, 98%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 100%, 98%, 1) 0%, hsla(40, 76%, 87%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 100%, 98%, 1) 0%, hsla(40, 76%, 87%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 100%, 98%, 1) 0%, hsla(40, 76%, 87%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFF4F4", endColorstr="#F7E6C4", GradientType=1 ); */
+    /* background-color: #17215F;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%230f1c59' fill-opacity='0.36'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.36'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E"); */
+  }
+  
+  .text h1{
+    font-size: 20vh;
+    font-family:'Philosopher', sans-serif;
+    color: #0B5563;
+    margin: 0 0 25px;
+  }
+
+  .subheading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    text-align: center;
+  }
+  .subheading h3{
+    color: #2A2F4F;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+
+  }
+  /* ================================= Hero css ================================== */
+
+  /*================================ Login css ===================================*/
+  .login-container{
+    width: 100%;
+    height: 100vh;
+    margin: 30 0 0 0;
+    padding: 0;
+     
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #B4CFB0;
+  }
