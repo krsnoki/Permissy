@@ -1,6 +1,81 @@
-.login-area{
-    width: 70vw;
-    height: 70vh;
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Ysabeau+Office:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
 
-    background-color: #E0DDAA;
+.login-area{
+    width: 40vw;
+    height: 60vh;
+    margin-top: 4rem;
+
+    background-color: #eff9ff;
+    border-radius: 20px;
+    border: 2pt rgb(168, 193, 175) solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loginhead{
+    /* border: 2pt black solid; */
+    height: 5rem;
+    width: 30rem;
+    margin: 0 1rem 0 2rem;
+    text-align: center;
+
+    color:#233d2e;
+    font-family:'Courier New', Courier, monospace;
+}
+.login-area hr{
+    width: 30rem;
+    
+    border: 2pt rgb(71, 99, 88) solid;
+    margin-bottom: 3rem;
+    border-radius: 2px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-aorund;
+}
+
+form label{
+    font-size: 15pt;
+    font-weight: bolder;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+form input{
+    height: 4rem;
+    width: 25rem;
+    background-color: #e6ffee;
+    margin: 0.5rem 2rem 1rem 5.5rem;
+    border: 2pt #445c4c solid;
+    border-radius: 15px
+}
+
+form button{
+    height: 3.7rem;
+    width: 30rem;
+
+    margin: 1rem 2rem 0rem 2rem;
+    background-color: #0E6B36;
+    border: 3pt #0f4f24 solid;
+    border-radius: 15px;
+
+    font-size: 25px;
+    color: antiquewhite;
+    font-family: 'Ysabeau Office', sans-serif;
+
+}
+.fPass{
+    display: block;
+    text-align: center;
+}
+h5 a{
+    color: #233d2e;
+    font-size: 10pt;
+    text-align: center;
+    font-family: 'Ysabeau Office', sans-serif;
+    width: fit-content;
 }
