@@ -24,7 +24,7 @@
   }
   .navbar-container {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: fixed;
 
     align-items: center;
@@ -38,7 +38,7 @@
     background-color: #606C5D;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* box-shadow: rgb(117, 116, 116) 0px 5px 15px; */
-    padding: 0 5px;
+    padding: 10px 5px;
   }
   
   ul {
@@ -139,4 +139,5 @@
     justify-content: space-around;
 
     background-color: #B4CFB0;
+    flex-grow: inherit;
   }
