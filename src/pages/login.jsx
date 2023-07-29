@@ -1,7 +1,7 @@
 <script src="http://localhost:8097"></script>
 
-import './styles/global.css';
-import './styles/login.css';
+import '../styles/global.css';
+import '../styles/login.css';
 import { useFormik } from 'formik';
 
 function Login() {
