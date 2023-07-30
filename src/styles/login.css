@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
 
 .login-area{
-    width: 40vw;
     height: 60vh;
     margin-top: 4rem;
 
-    background-color: #eff9ff;
+    background-color: #131617;
     border-radius: 20px;
-    border: 2pt rgb(168, 193, 175) solid;
+    border: 2pt rgb(56, 61, 57) solid;
+    box-shadow: rgba(63, 63, 70, 0.564) 0px 7px 10px 0px;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .loginhead{
     /* border: 2pt black solid; */
