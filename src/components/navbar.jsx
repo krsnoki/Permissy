@@ -1,8 +1,6 @@
 import '../styles/global.css'
 import { Link } from 'react-router-dom'
-import Hero from '../pages/hero';
-import Login from '../pages/login';
-import About from '../pages/about';
+
 
 
 function Navbar() {
@@ -10,14 +8,21 @@ function Navbar() {
     <div className='nav'>
     <div className='navbar-container'>
       <ul className='item-list'>
-        <li><Link to={Hero}>Home</Link></li>
-        <li><Link to={About}>About</Link></li>
-        <li><Link to={Login}>Login</Link></li>
+        <li><Link to='/' style = {LinkStyle}>Home</Link></li>
+        <li><Link to='/about' style={LinkStyle}>About</Link></li>
+        <li><Link to='/login' style={LinkStyle}>Login</Link></li>
         <li className='last-child'></li>
       </ul>
     </div>
     </div>
   );
+
+  
 }
 
 export default Navbar;
+
+const LinkStyle = {
+  color: 'white',
+  textDecoration: 'none'
+};

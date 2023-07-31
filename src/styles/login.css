@@ -1,79 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Ysabeau+Office:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Ysabeau+Office:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap");
 
-.login-area{
-    height: 60vh;
-    margin-top: 4rem;
+.login-area {
+  height: 65vh;
+  width: 40vw;
+  margin-top: 4rem;
 
-    background-color: #131617;
-    border-radius: 20px;
-    border: 2pt rgb(56, 61, 57) solid;
-    box-shadow: rgba(63, 63, 70, 0.564) 0px 7px 10px 0px;
+  background-color: #131617;
+  border-radius: 20px;
+  border: 2pt rgb(56, 61, 57) solid;
+  box-shadow: rgba(63, 63, 70, 0.564) 0px 7px 10px 0px;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
-.loginhead{
-    /* border: 2pt black solid; */
-    height: 5rem;
+
+.loginhead {
+  /* border: 2pt black solid; */
+  height: 4rem;
+  width: 30rem;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+
+  color: #e6ffee;
+  font-size: 7pt;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+.login-area hr {
+  width: 25rem;
+
+  border: 1pt #1d2a31 solid;
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+
+/* ========================== form formatting ================================= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-aorund;
+  justify-content: center;
+  align-self: center;
+}
+
+form label {
+  font-size: 10pt;
+  font-weight: bolder;
+  font-family: "Ysabeau Office", sans-serif;
+  color: #e6ffee;
+}
+/* ++++++++++++++++++++++++++ input formatting +++++++++++++++++++++++++++++++++++++++++ */
+form input {
+  height: 3rem;
+  width: 20rem;
+  padding: 1rem;
+  background-color: #1d2a31;
+  color: #e6ffee;
+  margin: 0.5rem 2rem 1rem 0;
+  font-size: 8pt;
+  border: 0;
+
+  border-radius: 15px;
+}
+form input:focus {
+  border: none;
+  outline: none;
+  border-color: #1d2a31;
+  background-color: #22313ada;
+}
+
+/* ++++++++++++++++++++++++++  button formatting +++++++++++++++++++++++++++++++++++++++++ */
+form button {
+  height: 4rem;
+  width: 20rem;
+
+  margin: 1rem 2rem 0rem 1rem;
+  background-color: #1f75fe;
+  border-radius: 15px;
+  border: 0;
+  margin: 1rem 0 0 0;
+
+  font-size: 15px;
+  color: antiquewhite;
+  font-weight: bold;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+form button:active {
+  opacity: 0.7; /* Reduce opacity while the button is being clicked */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+form button.clicked {
+  animation: fadeIn 0.5s;
+}
+
+.fPass {
+    height: 1rem;
     width: 30rem;
-    margin: 0 1rem 0 2rem;
+    margin: 0 1rem 0 1rem;
     text-align: center;
-
-    color:#233d2e;
-    font-family:'Courier New', Courier, monospace;
-}
-.login-area hr{
-    width: 30rem;
+    align-self: center;
+  
     
-    border: 2pt rgb(71, 99, 88) solid;
-    margin-bottom: 3rem;
-    border-radius: 2px;
+}
+h5{
+  font-size: 9pt;
+  text-align: center;
+  font-family: "Ysabeau Office", sans-serif;
+  width: fit-content;
+  color: #e6ffee;
+  margin: 0.5rem 0 2rem 0;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-items: space-aorund;
-}
+/* +++++++++++++++++++++++++media query max width 1024px for laptops++++++++++++++++++++++++++++++++= */
 
-form label{
-    font-size: 15pt;
-    font-weight: bolder;
-    font-family: 'Ysabeau Office', sans-serif;
-}
 
-form input{
+@media  screen and (min-width: 1024px) {
+  .login-area{
+    height: 50vh;
+    width: 60vw;
+    margin-top: 3rem;
+  }
+
+  .loginhead {
+    font-size: 20pt;
+    color: #e6ffee;
     height: 4rem;
-    width: 25rem;
-    background-color: #e6ffee;
-    margin: 0.5rem 2rem 1rem 5.5rem;
-    border: 2pt #445c4c solid;
-    border-radius: 15px
-}
-
-form button{
-    height: 3.7rem;
-    width: 30rem;
-
-    margin: 1rem 2rem 0rem 2rem;
-    background-color: #0E6B36;
-    border: 3pt #0f4f24 solid;
-    border-radius: 15px;
-
-    font-size: 25px;
-    color: antiquewhite;
-    font-family: 'Ysabeau Office', sans-serif;
-
-}
-.fPass{
-    display: block;
+    width: auto;
     text-align: center;
+    margin: 1rem 0 4rem 0rem; 
+  }
+
+  .login-area hr {
+    width: 50rem;
+    margin: 1rem 0 2rem 0;
+  }
+
+  form label {
+    font-size: 25pt;
+    font-weight: bolder;
+    font-family: "Ysabeau Office", sans-serif;
+    color: #e6ffee;
+  }
+
+  form input {
+    height: 5rem;
+    width: 45rem;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+    align-self: center;
+    color:#e6ffee;
+    font-size: medium;
+  }
+  form input:focus {
+    border: 1pt;
+    outline: none;
+    border-color: #657781;
+    background-color: #354c5ada;
+  }
+
+  form button {
+    height: 5rem;
+    width: 45rem;
+
+    font-size: 22pt;
+    margin: 1rem 0 2rem 0;
+
+  }
+  .fpass h5{
+    font-size: 18pt;
+    text-decoration: underline;
+    color: #e6ffee;
+  }
+
 }
-h5 a{
-    color: #233d2e;
-    font-size: 10pt;
+
+
+/* +++++++++++++++++++++++++media query max width 800px for tabs +++++++++++++++++++++++++++++++= */
+@media screen and (max-width: 768px) {
+  .login-area {
+    height: 60vh;
+    width: 75vw;
+    margin-top: 3rem;
+  }
+
+  .loginhead {
+    font-size: small;
+    color: #e6ffee;
+    height: 4rem;
+    width: auto;
     text-align: center;
-    font-family: 'Ysabeau Office', sans-serif;
-    width: fit-content;
+    margin: 0.5rem 0 0 0.1rem; 
+  }
+
+  .login-area hr {
+    width: 20rem;
+  }
+
+  form input {
+    height: 3.2rem;
+    width: 20rem;
+    padding: 1rem;
+    margin: 0.5rem 0 2rem 0;
+    align-self: center;
+    color:#e6ffee;
+    font-size: medium;
+  }
+
+  form input:focus {
+    border: 1pt;
+    outline: none;
+    border-color: #657781;
+    background-color: #354c5ada;
+  }
+  .fpass h5 Link{
+    font-size: 8pt;
+    text-decoration: none;
+    color: #e6ffee;
+  }
+}   
+
+/* +++++++++++++++++++++++++++++ media query max width 600 for phones++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 600px) {
+  .login-area {
+    height: 60vh;
+    width: 50vw;
+    margin-top: 4rem;
+  }
+  .loginhead {
+    height: 4rem;
+    width: 20rem;
+    margin: 0 1rem 0 1rem;
+  }
 }

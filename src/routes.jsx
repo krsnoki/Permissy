@@ -1,19 +1,28 @@
 import {
   createBrowserRouter,
-  createRoutesFromElements, 
-  Route, 
 } from "react-router-dom"
 
-
-import Hero from './pages/hero'
 import About from './pages/about';
 import Login from './pages/login';
+import App from './app';
+import ResetPassword from "./pages/resetPassword";
 
-export  const router = createBrowserRouter(createRoutesFromElements(
-  <Route path="/"  element={ <Hero />}>
-  
-    <Route path="about" element={<About />} />
-    <Route path="login" element={<Login />} />
-  </Route>
-
-))
+export  const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/resetPassword",
+    element: <ResetPassword />,
+  },
+])
+export default router;

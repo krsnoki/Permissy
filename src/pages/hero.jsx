@@ -1,7 +1,8 @@
 import '../styles/global.css'
 import Navbar from '../components/navbar'
 import Login from './login'
-import Footer from '../components/footer'
+// import svgSquare from '../assets/beautiful square.svg'
+// import Footer from '../components/footer'
 
 
 function Hero() {
@@ -12,9 +13,9 @@ function Hero() {
                 <h1>Permissy</h1>
                 <div className='subheading'><h3>Effortless Authorization, Simplified Permissions</h3></div>
             </div>
+          
         </div>
         <Login/>
-        <Footer />
     </>
     )
 }
