@@ -1,9 +1,18 @@
 /* ... (previously defined styles) ... */
-
+.footer-container{
+  background-color: #070707;
+  height:  40vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  allign-items: center;
+  padding: auto;
+}
 .social-icons {
     display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+    margin: 2rem 0 1rem 0;
+    align-self: center;
   }
   
   .social-icon {
@@ -23,5 +32,8 @@
     text-align: center;
   }
   
+  .footer-info{
+    text-align: center;
+  }
   /* ... (previously defined styles) ... */
       

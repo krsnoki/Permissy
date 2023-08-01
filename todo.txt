@@ -5,6 +5,7 @@
 5. Footer create
 6. User Dashboard create
         single page with lots of options of forms
+    and Faculty dashboard
 7. Faculty dashboard create
     single page
 8. Forms

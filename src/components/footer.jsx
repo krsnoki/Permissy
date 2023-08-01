@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faTwitter, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import '../styles/footer.css'
 
 function Footer() {
   return (
@@ -19,9 +20,9 @@ function Footer() {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
-      <p className="contact-info">Contact us at: contact@permissy.com</p>
-      <p className="thanksgiving-line">Thank you for choosing Permissy!</p>
+     <div className="footer-info">
       <p className="copywrite">&copy; {new Date().getFullYear()} Permissy. All rights reserved.</p>
+     </div>
     </footer>
   );
 }
