@@ -1,6 +1,6 @@
 import '../styles/global.css';
 import '../styles/login.css';
-import Navbar from '../components/navbar';
+
 import { useFormik } from 'formik';
 import { useEffect, useRef } from 'react';
 import {Link} from 'react-router-dom';
@@ -30,7 +30,6 @@ function Login() {
 
     return (
         <>
-            <Navbar />
             <div className='login-container' ref={scrollRef}>
                 <div className='login-container'>
                     <div className='login-area'>

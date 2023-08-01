@@ -1,0 +1,71 @@
+/* App.css (or your preferred CSS file) */
+
+/* Light Theme Colors */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Container for the About page */
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .about{
+    height: 100vh;
+    padding-top: 18vh;
+    
+  }
+  
+  /* Heading styles */
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph styles */
+  p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* List styles */
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  /* Lightweight Animated SVGs */
+  /* Replace 'svgs-path' with the path to your SVG files */
+  .svgs-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Customize the size and animation of your SVGs as needed */
+  .svgs-container img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    animation: svg-fade-in 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes svg-fade-in {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

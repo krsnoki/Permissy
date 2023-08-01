@@ -1,5 +1,27 @@
-.footer {
-    width: 100vw;
-    height: 20vh;
-    background-color: black;
-}
+/* ... (previously defined styles) ... */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .social-icon {
+    color: #e6e6e6;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #2b2c33;
+  }
+  
+  .contact-info {
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* ... (previously defined styles) ... */
+      

@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Ysabeau+Office:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@500&display=swap");
-
 .login-area {
-  height: 65vh;
-  width: 40vw;
   margin-top: 4rem;
 
   background-color: #131617;
   border-radius: 20px;
-  border: 2pt rgb(56, 61, 57) solid;
+  border: 2pt solid rgb(56, 61, 57);
   box-shadow: rgba(63, 63, 70, 0.564) 0px 7px 10px 0px;
 
   display: flex;
@@ -18,22 +15,16 @@
 }
 
 .loginhead {
-  /* border: 2pt black solid; */
-  height: 4rem;
-  width: 30rem;
-  margin: 1rem 0 1rem 0;
   text-align: center;
 
   color: #e6ffee;
-  font-size: 7pt;
+  font-size: large; /* Adjusted font size for better readability */
   font-family: "Ysabeau Office", sans-serif;
 }
 
 .login-area hr {
-  width: 25rem;
-
-  border: 1pt #1d2a31 solid;
-  margin-bottom: 1.5rem;
+  border: 1pt solid #1d2a31;
+  margin-bottom: 1rem;
   border-radius: 2px;
 }
 
@@ -42,56 +33,46 @@
 form {
   display: flex;
   flex-direction: column;
-  justify-items: space-aorund;
-  justify-content: center;
-  align-self: center;
+  align-items: start; /* Changed from 'justify-items: space-aorund' */
 }
 
 form label {
-  font-size: 10pt;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: "Ysabeau Office", sans-serif;
   color: #e6ffee;
+  margin-left: 2rem;
 }
+
 /* ++++++++++++++++++++++++++ input formatting +++++++++++++++++++++++++++++++++++++++++ */
 form input {
-  height: 3rem;
-  width: 20rem;
   padding: 1rem;
   background-color: #1d2a31;
   color: #e6ffee;
-  margin: 0.5rem 2rem 1rem 0;
-  font-size: 8pt;
-  border: 0;
-
+  margin: 0.5rem 0; /* Adjusted the margins to make it more consistent */
+  border: none; /* Removed the border property here */
   border-radius: 15px;
 }
+
 form input:focus {
-  border: none;
   outline: none;
-  border-color: #1d2a31;
   background-color: #22313ada;
 }
 
 /* ++++++++++++++++++++++++++  button formatting +++++++++++++++++++++++++++++++++++++++++ */
 form button {
-  height: 4rem;
-  width: 20rem;
-
-  margin: 1rem 2rem 0rem 1rem;
+  margin: 1rem 0 0; /* Removed duplicate margin property */
   background-color: #1f75fe;
   border-radius: 15px;
-  border: 0;
-  margin: 1rem 0 0 0;
-
-  font-size: 15px;
+  border: none; /* Removed the border property here */
+  font-size: 12pt; /* Adjusted font size for better readability */
   color: antiquewhite;
   font-weight: bold;
   font-family: "Ysabeau Office", sans-serif;
+  align-self: center;
 }
 
 form button:active {
-  opacity: 0.7; /* Reduce opacity while the button is being clicked */
+  opacity: 0.7;
 }
 
 @keyframes fadeIn {
@@ -108,16 +89,15 @@ form button.clicked {
 }
 
 .fPass {
-    height: 1rem;
-    width: 30rem;
-    margin: 0 1rem 0 1rem;
-    text-align: center;
-    align-self: center;
-  
-    
+  height: 1rem;
+  width: 30rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  align-self: center;
 }
-h5{
-  font-size: 9pt;
+
+h5 {
+  font-size: 10pt; /* Adjusted font size for better readability */
   text-align: center;
   font-family: "Ysabeau Office", sans-serif;
   width: fit-content;
@@ -130,37 +110,37 @@ h5{
 
 @media  screen and (min-width: 1024px) {
   .login-area{
-    height: 50vh;
-    width: 60vw;
+    height: 65vh;
+    width: 35vw;
     margin-top: 3rem;
   }
 
   .loginhead {
-    font-size: 20pt;
+    font-size: 16pt;
     color: #e6ffee;
-    height: 4rem;
+    height: 2rem;
     width: auto;
     text-align: center;
-    margin: 1rem 0 4rem 0rem; 
+    margin: 0.5rem 0 1rem 0rem; 
   }
 
   .login-area hr {
-    width: 50rem;
+    width: 25rem;
     margin: 1rem 0 2rem 0;
   }
 
   form label {
-    font-size: 25pt;
+    font-size: 12pt;
     font-weight: bolder;
     font-family: "Ysabeau Office", sans-serif;
     color: #e6ffee;
   }
 
   form input {
-    height: 5rem;
-    width: 45rem;
-    padding: 2rem;
-    margin: 2rem 0 2rem 0;
+    height: 2.8rem;
+    width: 23rem;
+    padding: 0 0 0 2rem;
+    margin: 0.2rem 0 1rem 0;
     align-self: center;
     color:#e6ffee;
     font-size: medium;
@@ -173,15 +153,15 @@ h5{
   }
 
   form button {
-    height: 5rem;
-    width: 45rem;
+    height: 2.5rem;
+    width: 20rem;
 
-    font-size: 22pt;
-    margin: 1rem 0 2rem 0;
+    font-size: 12pt;
+    margin: 1rem 0 0 0;
 
   }
   .fpass h5{
-    font-size: 18pt;
+    font-size: 8pt;
     text-decoration: underline;
     color: #e6ffee;
   }

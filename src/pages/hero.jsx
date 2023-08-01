@@ -1,5 +1,5 @@
 import '../styles/global.css'
-import Navbar from '../components/navbar'
+
 import Login from './login'
 // import svgSquare from '../assets/beautiful square.svg'
 // import Footer from '../components/footer'
@@ -7,7 +7,7 @@ import Login from './login'
 
 function Hero() {
     return (
-    <> <Navbar/>
+    <> 
         <div className='hero'>
             <div className='text'>
                 <h1>Permissy</h1>
