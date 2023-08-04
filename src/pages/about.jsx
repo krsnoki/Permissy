@@ -19,6 +19,8 @@ function About() {
         Our mission is to simplify the permission application process, making it more convenient
         for students to focus on their studies and extracurricular activities.
       </p>
+
+      <div className='reason-why'>
       <h2>Why Choose Permissy?</h2>
       <ul>
         <li>Fast and Easy: Submit permission applications online, saving time and effort.</li>
@@ -27,6 +29,7 @@ function About() {
         <li>Transparent: Track the status of your applications in real-time.</li>
         <li>Environmentally Friendly: Reduce paper waste by going digital.</li>
       </ul>
+      </div>
     </div>
     </div>
   );

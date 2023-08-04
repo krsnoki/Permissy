@@ -110,7 +110,7 @@ h5 {
 
 @media  screen and (min-width: 1024px) {
   .login-area{
-    height: 65vh;
+    height: 50vh;
     width: 35vw;
     margin-top: 3rem;
   }

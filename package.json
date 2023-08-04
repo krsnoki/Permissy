@@ -16,7 +16,10 @@
     "formik": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-dropdown": "^1.11.0",
+    "react-router-dom": "^6.14.2",
+    "react-widgets": "^5.8.4",
+    "redirect": "^0.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
