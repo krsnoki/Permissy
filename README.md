@@ -1,6 +1,7 @@
-<h1 align="center># Permissy</h1>
+
 
 ##Authors
+<h1 align="center># Permissy</h1>
 <h3 align="center">Authors: Aashutosh Karale (<a href= "https://github.com/Aashutosh-922"> Github</a>)</h3>
 <h3 align="center"><p>Kalyani Kolte (<a href= "https://github.com/krsnoki">Github</a>)</h3></p>
 
