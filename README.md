@@ -1,8 +1,6 @@
-
-
-##Authors
-<h1 align="center># Permissy</h1>
-<h3 align="center">Authors: Aashutosh Karale (<a href= "https://github.com/Aashutosh-922"> Github</a>)</h3>
+<p><h1 align="center># Permissy</h1></p>
+<p>Authors: </p>
+<h3 align="center">Aashutosh Karale (<a href= "https://github.com/Aashutosh-922"> Github</a>)</h3>
 <h3 align="center"><p>Kalyani Kolte (<a href= "https://github.com/krsnoki">Github</a>)</h3></p>
 
 #Introduction
@@ -17,13 +15,17 @@ The basic view of our project is at:
 
 This wireframe view is self explanatory of the process and the complexity of task.
 
-#The process being followed (percentage wise update):
+<p>
+The process being followed (percentage wise update):
 Task 1: Begin preliminary backend. (50%)
 Task 2: Front end development.(20%)
 Task 3: E-verification and permission (90%)
 Task 4: 
+</p>
+
 💬
-###Errors and problems we came across.
+
+Errors and problems we came across.
 Backend:
 1. 
 2. 
