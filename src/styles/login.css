@@ -88,6 +88,34 @@ form button.clicked {
   animation: fadeIn 0.5s;
 }
 
+
+/* Base styles for all screen sizes */
+select#role {
+  background-color: #1d2a31;
+  height: 3rem;
+  width: 23rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 10px;
+  margin: 0.5rem 0 2rem 0;
+  align-self: center;
+  color: #e6ffee;
+  font-size: medium;
+}
+
+/* Styles for focused select element */
+select#role:focus {
+  outline: none;
+  border: 1px solid #657781;
+ 
+}
+
+/* Media query for screens below 600px */
+@media screen and (max-width: 600px) {
+  select#role {
+    width: 90%; /* Reduce width for smaller screens */
+  }
+}
+
 .fPass {
   height: 1rem;
   width: 30rem;
@@ -148,7 +176,7 @@ h5 {
   form input:focus {
     border: 1pt;
     outline: none;
-    border-color: #657781;
+    border: 1px solid #657781;
     background-color: #354c5ada;
   }
 
