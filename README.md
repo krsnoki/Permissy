@@ -1,5 +1,8 @@
-## Permissy
-###<h3>#Authors: Aashutosh Karale (<a href= ""> Github</a>) Kalyani Kolte (<a>Github</a>)</h3>
+<h1 align="center>## Permissy</h1>
+
+<h3 align="center">#Authors: Aashutosh Karale (<a href= "https://github.com/Aashutosh-922"> Github</a>)</h3>
+<h3 align="center"><p>Kalyani Kolte (<a href= "https://github.com/krsnoki">Github</a>)</h3></p>
+
 #Introduction
 
 This project aims to create a web application which eases the process of offline permission and feedback handling for various applications and permissions required within campus.
@@ -17,7 +20,7 @@ Task 1: Begin preliminary backend. (50%)
 Task 2: Front end development.(20%)
 Task 3: E-verification and permission (90%)
 Task 4: 
-
+💬
 ###Errors and problems we came across.
 Backend:
 1. 
