@@ -2,9 +2,9 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    background-color: #292929;
+    background-color: #f7f7f7;
     color: #fff;
     align-items: center;
 }
@@ -13,28 +13,89 @@
     height: 3rem;
     text-align: center;
     border: 1pt white solid;
+    color: black;
 }
 
-.dashboard{
-    height: 36em;
-    width: 78em;
-
-    padding: 1rem;
-    border: 1pt blue solid;
-}
 
 .sidebar{
-    height: 34rem;
-    width: 15rem;
+    height: 59rem;
+    width: 20rem;
+    margin: 1rem 0rem 1rem 1rem;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: 1pt red solid;
+    justify-content: start;
+    align-self: flex-start;
+
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    background-color: #283030;
 }
 
 .menu{
-    height: 3rem;
-    width: 13rem;
+    height: 15rem;
+    width: 17rem;
     border: 1pt green solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    overflow-y: visible;
 }
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.sidebar ul li {
+ 
+    border-radius: 10px;
+    height: 3rem;
+    width: 17rem;
+    
+    font-size: 16pt;
+    /* font-family: "Geologica", sans-serif; */
+    color: white;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+li:hover{
+    background-color: #0061b1;
+    cursor: pointer;
+}
+
+/* Profile area */
+.profile-area{
+    height: 14rem;
+    width: 20rem;
+    border: #0061b1 1pt solid;
+
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 3rem 0rem 1rem 0rem;
+    border-radius: 15px;
+    overflow: hidden;
+    align-items: center;
+    background-color: #283030;
+}
+
+.profile-pic{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin: 1rem 0rem 1rem 0rem;
+    border: #e6006b 1pt solid;
+}
+
