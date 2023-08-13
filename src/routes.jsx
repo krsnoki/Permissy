@@ -9,6 +9,7 @@ import ResetPassword from "./pages/resetPassword";
 import Sdashboard from "./pages/Sdashboard";
 import Fdashboard from "./pages/fdashboard";
 import Signup from "./pages/signup";
+import SearchUser from "./pages/text";
 
 export  const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export  const router = createBrowserRouter([
   {
     path: "/signup",
     element: <Signup />,
+  },
+  {
+    path: "/test",
+    element: <SearchUser/>
   }
 ])
 export default router;

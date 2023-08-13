@@ -26,7 +26,7 @@ function Signup() {
         onSubmit: async values => {
             try {
                 // You can send the signup request here
-                const response = await axios.post('http://localhost:5000/api/users/auth/signup', values);
+                const response = await axios.post('http://localhost:5000/auth/signup', values);
                 handleRedirect(response.data.role);
                 console.log(response.data);
             } catch (error) {
