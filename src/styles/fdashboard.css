@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.dash-body{
+    display: flex;
+    flex-direction: column;
+}
+
 .head{
     height: 3rem;
     text-align: center;
@@ -36,12 +41,14 @@
 .menu{
     height: 15rem;
     width: 17rem;
-    border: 1pt green solid;
+
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
+
+    padding: 0rem 1rem 0rem 0rem;
 
     flex-wrap: wrap;
     overflow-y: visible;
@@ -57,17 +64,18 @@
     
 }
 
-.sidebar ul li {
- 
-    border-radius: 10px;
-    height: 3rem;
-    width: 17rem;
+.sidebar ul li{
+    height: 2rem;
+    width: 13rem;
     
-    font-size: 16pt;
-    /* font-family: "Geologica", sans-serif; */
+    font-size: 14pt;
+    font-weight: normal;
+    font-family: "Geologica", sans-serif;
     color: white;
-    margin: 1rem 0rem 1rem 0rem;
-    padding: 0rem 0rem 0rem 1rem;
+    margin: 1rem 0rem 0rem 0rem;
+    padding: 1rem 0rem 1.7rem 1rem;
+
+    border-bottom: #4c5e5e 1pt solid;
 }
 
 li:hover{
@@ -77,14 +85,14 @@ li:hover{
 
 /* Profile area */
 .profile-area{
-    height: 14rem;
+    height: 12rem;
     width: 20rem;
-    border: #0061b1 1pt solid;
+    /* border: #0061b1 1pt solid; */
 
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-    margin: 3rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 1rem 0rem;
     border-radius: 15px;
     overflow: hidden;
     align-items: center;
@@ -95,7 +103,12 @@ li:hover{
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    margin: 1rem 0rem 1rem 0rem;
-    border: #e6006b 1pt solid;
+    margin: 1rem 0rem 0.2rem 0rem;
+}
+
+.profile-name{
+    font-size: 16pt;
+    color: white;
+    margin: 1rem 0rem 0rem 0rem;
 }
 

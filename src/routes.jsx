@@ -8,6 +8,7 @@ import App from './app';
 import ResetPassword from "./pages/resetPassword";
 import Sdashboard from "./pages/Sdashboard";
 import Fdashboard from "./pages/fdashboard";
+import Signup from "./pages/signup";
 
 export  const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ export  const router = createBrowserRouter([
   {
     path: "/faculty-dashboard",
     element: <Fdashboard />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   }
 ])
 export default router;

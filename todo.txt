@@ -1,11 +1,13 @@
 1. Link and react router dom - done
 2. Login styles revsie - done
 3. Hero styles revise - done
-4. About page create
-5. Footer create
+4. About page create - done
+5. Footer create - done 
 6. User Dashboard create
         single page with lots of options of forms
     and Faculty dashboard
 7. Faculty dashboard create
     single page
 8. Forms
+9. create signup form - done
+10. 
