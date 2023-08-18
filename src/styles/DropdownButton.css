@@ -1,0 +1,54 @@
+/* DropdownButton.css */
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Geologica:wght@300&display=swap");
+
+.dropdown-button {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+span {
+  font-family: "Belanosima", sans-serif;
+  font-size: 13pt;
+}
+
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f8f4f4;
+  z-index: 9999;
+  top: 20px;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  margin: 0;
+
+  width: 16rem;
+  list-style: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.dropdown-list li {
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.dropdown-list li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-list li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-list li a:hover {
+  color: white;
+  background-color: transparent;
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Geologica:wght@300&display=swap");
+
+
+.application-opt{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opt-item{
+    height: 3rem;
+
+    width: 60rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13pt;
+    font-family: 'Belanosima', sans-serif;
+
+}
+
+.opt-item li{
+    display: inline;
+    height: 2.7rem;
+    padding: 0.7rem 1rem 0rem 1rem;
+    
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.opt-item li:hover{
+    transform: scale(1.02);
+    border-radius: 10px;
+    background-color: #283030;
+    border: 0;
+}
+
+.opt-item li.active{
+    transform: scale(1.02);
+    background-color: #C42847;
+    border-radius: 10px;
+    border: 0;
+
+    span{
+        color: white;
+    }
+}

@@ -1,8 +1,6 @@
 import '../styles/global.css'
 import { Link } from 'react-router-dom'
 
-
-
 function Navbar() {
   return (
     <div className='nav'>
@@ -14,6 +12,7 @@ function Navbar() {
         <li className='last-child'></li>
       </ul>
     </div>
+   
     </div>
   );
 

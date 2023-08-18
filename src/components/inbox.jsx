@@ -1,16 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-function Inbox(props) {
-    const {} = props
-
+function Inbox() {
     return (
-        
+        <></>
     )
 }
 
-Inbox.propTypes = {
-
-}
-
 export default Inbox
+

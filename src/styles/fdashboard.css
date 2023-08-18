@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
 
-    background-color: #f7f7f7;
+    background-color: #f3f3f3;
     color: #fff;
     align-items: center;
 }
@@ -12,13 +12,22 @@
 .dash-body{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+
+    height: 59rem;
+    width: 97rem;
+
+    margin: 0rem 1rem 0rem 1rem;
+
 }
 
 .head{
-    height: 3rem;
     text-align: center;
-    border: 1pt white solid;
+    justify-content: center;
     color: black;
+    margin: 0.5rem;
 }
 
 
@@ -65,7 +74,7 @@
 }
 
 .sidebar ul li{
-    height: 2rem;
+    height: 3.2rem;
     width: 13rem;
     
     font-size: 14pt;
@@ -74,12 +83,17 @@
     color: white;
     margin: 1rem 0rem 0rem 0rem;
     padding: 1rem 0rem 1.7rem 1rem;
-
-    border-bottom: #4c5e5e 1pt solid;
+    border-radius: 5px;
+    align-items: center;
 }
 
 li:hover{
-    background-color: #0061b1;
+    background-color: #374444;
+    cursor: pointer;
+}
+
+li:active{
+    background-color: #C42847;
     cursor: pointer;
 }
 
