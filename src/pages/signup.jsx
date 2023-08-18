@@ -25,11 +25,16 @@ function Signup() {
         },
         onSubmit: async values => {
             try {
-                // You can send the signup request here
-                const response = await axios.post('http://localhost:5000/auth/signup', values);
+                console.log(values);
+
+                // error here, passed data is not being received by the server
+
+                const response = await axios.post('http://localhost:3000/auth/signup', values);
                 handleRedirect(response.data.role);
+                alert("User created successfully");
                 console.log(response.data);
             } catch (error) {
+                alert("User creation failed");
                 console.error(error);
             }
         }

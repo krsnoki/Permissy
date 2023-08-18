@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import DropdownButton from '../components/DropdownButton';
-// import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import Inbox from '../components/inbox';
 import '../styles/fdashboard.css'
-import '../styles/ap-op.css'
+import '../styles/sdashboard.css'
 import { directorOfcOptions, siteSectionOptions, deanOfcOptions, deptOptions } from '../assets/itemLists';
 
 function Fdashboard() {
@@ -15,14 +15,14 @@ function Fdashboard() {
 
     const fetchName = async (username) => {
         try {
-            const response = await axios.get(`http://localhost:5000/findUser?username=${username}`);
+            const response = await axios.get(`http://localhost:3000/findUser?username=${username}`);
             setUsers(response.data);
             setErrorMessage('');
 
             // Move the following logic inside this function
             const name = response.data.length > 0 ? response.data[0].name : '';
             // const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=6c7f85c31f064e2e9836da10c47b919f&name=" + name;
-            const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=klayani&name=" + name;
+            const avatarUrl = "https://avatars.abstractapi.com/df1/?api_key=klayani&name=" + name;
             setProfilePicUrl(avatarUrl);
         } catch (error) {
             setUsers([]);
@@ -53,10 +53,12 @@ function Fdashboard() {
                     </ul>
                 </div>
             </div>
+
+            {/* Dashboard main body */}
             <div className='dash-body'>
                 <div className='head'>
                     <h1>Dashboard</h1>
-                </div>
+                
                 <div className='application-opt'>
                     <ul className='opt-item'>
                         <li><DropdownButton items={directorOfcOptions} btnLabel={"Director Office"} /></li>
@@ -64,12 +66,11 @@ function Fdashboard() {
                         <li><DropdownButton items={siteSectionOptions} btnLabel={"Site Section"} /></li>
                         <li><DropdownButton items={deanOfcOptions} btnLabel={"Dean Office"} /></li>
                         <li><DropdownButton items={deptOptions} btnLabel={"Department"} /></li>
-
-
                     </ul>
                 </div>
-                <div className='inbox-button'>
-
+            </div>
+                <div className='inbox-container'>
+                    <Inbox/>
                 </div>
             </div>
 

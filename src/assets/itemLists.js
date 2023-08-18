@@ -1,6 +1,8 @@
 export const directorOfcOptions = [
     {to: "/", label: "Accounts"},
-    {to:"/", label: "Events"},
+    {label: "Events", children: [
+        {to: "/", label: "College Events"},
+        {to: "/", label: "External Events"},]},
     {to: "/", label:"SIC"},
 ]
 

@@ -24,7 +24,7 @@ function Login() {
         },
         onSubmit: async values => {
             try {
-                const response = await axios.post('http://localhost:5000/auth/login', values);
+                const response = await axios.post('http://localhost:3000/auth/login', values);
                 const { role } = response.data; // Assuming the API returns the role
                 handleRedirect(role);
             } catch (error) {

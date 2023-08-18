@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&family=Geologica:wght@300&display=swap");
+
+.application-opt{
+    width: 70%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.opt-item{
+    height: 3rem;
+
+    width: 60rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13pt;
+    font-family: "Geologica", sans-serif;
+
+}
+
+.opt-item li{
+    display: inline;
+    height: 2.7rem;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0.2rem;
+    
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.opt-item li:hover{
+    transform: scale(1.02);
+    border-radius: 10px;
+    background-color: #98e1e1;
+    border: 0;
+}
+
+.opt-item li.active{
+    transform: scale(1.02);
+    background-color: #C42847;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* inbox stylings */
+.inbox-container{
+    width: 98%;
+    height: 37vmax;
+
+    margin: 1rem;
+
+    background-color: whitesmoke;
+}
