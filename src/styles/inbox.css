@@ -1,0 +1,9 @@
+.application{
+    color: black;
+    background-color:  white;
+
+    width: 96%;
+    align-items: end;
+
+    height: 4rem;
+}

@@ -6,7 +6,8 @@ import DropdownButton from '../components/DropdownButton';
 import Inbox from '../components/inbox';
 import '../styles/fdashboard.css'
 import '../styles/sdashboard.css'
-import { directorOfcOptions, siteSectionOptions, deanOfcOptions, deptOptions } from '../assets/itemLists';
+import { directorOfcOptions, siteSectionOptions, deanOfcOptions, deptOptions } from '../assets/lists/itemLists';
+import { dummyList } from '../assets/lists/dummyApplications';
 
 function Fdashboard() {
     const [profilePicUrl, setProfilePicUrl] = useState('');
@@ -70,7 +71,7 @@ function Fdashboard() {
                 </div>
             </div>
                 <div className='inbox-container'>
-                    <Inbox/>
+                    <Inbox dummyList={dummyList} />
                 </div>
             </div>
 

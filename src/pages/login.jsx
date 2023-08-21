@@ -10,6 +10,8 @@ function Login() {
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleRedirect = (role) => {
+        
+
         if (role === 1) {
             navigate('/faculty-dashboard');
         } else if (role === 2) {
@@ -25,7 +27,9 @@ function Login() {
         onSubmit: async values => {
             try {
                 const response = await axios.post('http://localhost:3000/auth/login', values);
-                const { role } = response.data; // Assuming the API returns the role
+                const { role } = response.data; 
+                alert("role");
+                // Assuming the API returns the role
                 handleRedirect(role);
             } catch (error) {
                 setErrorMessage('Invalid credentials. Please try again.'); // Display error message

@@ -1,17 +1,26 @@
 import '../styles/global.css';
 import '../styles/signup.css';
 import { useFormik } from 'formik';
-import axios from 'axios'; // Import Axios
+import axios from 'axios'; 
 import { useNavigate } from 'react-router-dom';
 
 function Signup() {
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     const handleRedirect = (role) => {
-        if (role === 1) {
-            navigate('/faculty-dashboard');
-        } else if (role === 2) {
-            navigate('/student-dashboard');
+        
+        try {
+            console.log("I can redirect");
+            if (role == 1) {
+                navigate('/faculty-dashboard');
+            } else if (role == 2) {
+                navigate('/student-dashboard');
+            } else {
+                navigate('/login');
+            }
+        }
+        catch (error) {
+            console.error(error);
         }
     };
     const formik = useFormik({
@@ -26,13 +35,11 @@ function Signup() {
         onSubmit: async values => {
             try {
                 console.log(values);
-
-                // error here, passed data is not being received by the server
-
                 const response = await axios.post('http://localhost:3000/auth/signup', values);
-                handleRedirect(response.data.role);
-                alert("User created successfully");
-                console.log(response.data);
+                alert("User created successfully! your role is " + values.role);
+
+                handleRedirect(values.role);
+                console.log(response);
             } catch (error) {
                 alert("User creation failed");
                 console.error(error);
