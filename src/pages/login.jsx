@@ -3,7 +3,7 @@ import '../styles/login.css';
 import { useFormik } from 'formik';
 import { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Import Axios
+import axios from 'axios'; 
 
 function Login() {
     const navigate = useNavigate();
@@ -42,8 +42,8 @@ function Login() {
     useEffect(() => {
         const timer = setTimeout(() => {
             scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+            
         }, 4500);
-
         return () => clearTimeout(timer);
     }, []);
 

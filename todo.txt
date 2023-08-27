@@ -3,13 +3,22 @@
 3. Hero styles revise - done
 4. About page create - done
 5. Footer create - done 
+9. create signup form api - done
+
+August 22, onwards tasks
+
+10. Inbox
+11. toggle view switch for switching between approved and pending request
 6. User Dashboard create
         single page with lots of options of forms
     and Faculty dashboard
-7. Faculty dashboard create
+7. Faculty/student dashboard create
     single page
 8. Forms
-9. create signup form - done
-10. Inbox
-11. toggle view switch for switching between approved and pending request
-
+ >> leave application
+ >> permission forms
+ >> site section permissions
+ >> sic permission
+ >>
+ >>
+ >>

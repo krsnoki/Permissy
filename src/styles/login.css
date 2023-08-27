@@ -7,6 +7,7 @@
   border-radius: 20px;
   border: 2pt solid rgb(56, 61, 57);
   box-shadow: rgba(63, 63, 70, 0.564) 0px 7px 10px 0px;
+  padding: 1rem 3rem 1rem rem;
 
   display: flex;
   flex-direction: column;
@@ -110,7 +111,7 @@ select#role:focus {
 }
 
 /* Media query for screens below 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
   select#role {
     width: 90%; /* Reduce width for smaller screens */
   }
@@ -138,8 +139,8 @@ h5 {
 
 @media  screen and (min-width: 1024px) {
   .login-area{
-    height: 55vh;
-    width: 35vw;
+    height: max-content;
+    width: 32vw;
     margin-top: 3rem;
   }
 
@@ -199,8 +200,8 @@ h5 {
 /* +++++++++++++++++++++++++media query max width 800px for tabs +++++++++++++++++++++++++++++++= */
 @media screen and (max-width: 768px) {
   .login-area {
-    height: 70vh;
-    width: 75vw;
+    height: max-content;
+    width: max-content;
     margin-top: 3rem;
   }
 

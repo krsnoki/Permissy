@@ -47,7 +47,6 @@
 
 .opt-item li.active{
     transform: scale(1.02);
-    background-color: #C42847;
     border-radius: 10px;
     border: 0;
 }

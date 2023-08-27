@@ -20,16 +20,19 @@ export const deanOfcOptions = [
         {to:"/", label: "IT services"},
         {to:"/", label: "Planning"},
 ]
+const children = [
+    {to: "/", label: "Equipment Permission"},
+    {to: "/", label: "Hall Access Permission"},]
 
 export const deptOptions = [
-    {to:"/", label: "Civil department"},
-    {to:"/", label: "Mechnical department"},
-    {to:"/", label: "ENTC department"},
-    {to:"/", label: "Instrumentation department"},
-    {to:"/", label: "Electrical department"},
-    {to:"/", label: "Computer department"},
-    {to:"/", label: "IT Department"},
-    {to:"/", label: "Chemical department"},
-    {to:"/", label: "Production department"},
-    {to:"/", label: "Textile department"},
+    {label: "Civil department", children},
+    {label: "Mechnical department", children},
+    {label: "ENTC department", children},
+    {label: "Instrumentation department", children},
+    {label: "Electrical department", children},
+    {label: "Computer department", children},
+    {label: "IT Department", children},
+    {label: "Chemical department", children},
+    {label: "Production department", children},
+    {label: "Textile department", children},
 ]

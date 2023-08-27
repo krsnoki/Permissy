@@ -8,13 +8,13 @@ body {
   
   /* Container for the About page */
   .about-container {
-    max-width: 800px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
   }
   .about{
-    height: 80vh;
-    padding-top: 18vh;
+    height: 100vh;
+    padding-top: 30vh;
     
   }
   
@@ -26,7 +26,7 @@ body {
   }
   
   h2 {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -34,38 +34,14 @@ body {
   
   /* Paragraph styles */
   p {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     line-height: 1.6;
   }
   
   /* List styles */
   ul {
     list-style: disc;
-    margin-left: 20px;
+    height: 8rem;
+    margin-left: 30px;
     margin-bottom: 15px;
   }
-  
-  /* Lightweight Animated SVGs */
-  /* Replace 'svgs-path' with the path to your SVG files */
-  .svgs-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Customize the size and animation of your SVGs as needed */
-  .svgs-container img {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    animation: svg-fade-in 1s ease-in-out infinite alternate;
-  }
-  
-  @keyframes svg-fade-in {
-    0% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  

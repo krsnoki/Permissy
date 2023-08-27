@@ -1,8 +1,11 @@
 import '../styles/about.css'
+import { useParallax } from 'react-scroll-parallax';
 
 function About() {
+
+  const {ref} = useParallax({ speed: 10})
   return (
-    <div className='about'>
+    <div className='about' ref={ref}>
     <div className="about-container">
       <h1>About Permissy</h1>
       <p>
