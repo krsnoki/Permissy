@@ -7,18 +7,19 @@ import '../styles/fdashboard.css'
 function Fdashboard() {
     const [profilePicUrl, setProfilePicUrl] = useState('');
     const [users, setUsers] = useState([]);
+
     const [errorMessage, setErrorMessage] = useState('');
 
     const fetchName = async (username) => {
         try {
-            const response = await axios.get(`http://localhost:5000/findUser?username=${username}`);
+            const response = await axios.get(`http://localhost:3000/findUser?username=${username}`);
             setUsers(response.data);
             setErrorMessage('');
             
             // Move the following logic inside this function
             const name = response.data.length > 0 ? response.data[0].name : '';
-            // const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=6c7f85c31f064e2e9836da10c47b919f&name=" + name;
-            const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=klayani&name=" + name;
+            const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=6c7f85c31f064e2e9836da10c47b919f&name=" + name;
+            // const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=klayani&name=" + name;
             setProfilePicUrl(avatarUrl);
           } catch (error) {
             setUsers([]);
@@ -28,7 +29,8 @@ function Fdashboard() {
     };
 
     useEffect(() => {
-        fetchName("bhagya07");
+        // const res = await axios.get('http://localhost:3000/finduser?');
+        fetchName("aashtosh922");
    }, []);
 
     return (
@@ -52,9 +54,7 @@ function Fdashboard() {
                 <div className='head'>
                     <h1>Dashboard</h1>
                 </div>
-                <div className='inbox-button'>
-                  
-                </div>
+                
             </div>
 
         </div>

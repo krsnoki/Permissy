@@ -2,7 +2,7 @@ import {
   createBrowserRouter,
 } from "react-router-dom"
 
-import About from './pages/about';
+import About from "./pages/About";
 import Login from './pages/login';
 import App from './app';
 import ResetPassword from "./pages/resetPassword";

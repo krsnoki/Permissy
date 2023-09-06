@@ -54,9 +54,25 @@
 /* inbox stylings */
 .inbox-container{
     width: 98%;
-    height: 37vmax;
+    max-height: 37vmax;
 
     margin: 1rem;
+    overflow: auto;
 
     background-color: whitesmoke;
 }
+
+  .inbox-container::-webkit-scrollbar {
+    width: 8px; }
+  
+  .inbox-container::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 4px; 
+  }
+  
+  .inbox-container::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #f0f0f0; 
+    border: #bdbdbd 1px solid;
+  }
+  

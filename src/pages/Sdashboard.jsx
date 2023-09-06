@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -7,9 +7,13 @@ import Inbox from '../components/inbox';
 import '../styles/fdashboard.css'
 import '../styles/sdashboard.css'
 import { directorOfcOptions, siteSectionOptions, deanOfcOptions, deptOptions } from '../assets/lists/itemLists';
-import { dummyList } from '../assets/lists/dummyApplications';
+// import { dummyList } from '../assets/lists/dummyApplications';
 
 function Fdashboard() {
+    const location = useLocation();
+    const payload = location.state && location.state.payload;
+
+    const [status, setStatus] = useState('pending'); // ['pending', 'approved', 'rejected'
     const [profilePicUrl, setProfilePicUrl] = useState('');
     const [users, setUsers] = useState([]);
     const [errorMessage, setErrorMessage] = useState('');
@@ -22,8 +26,9 @@ function Fdashboard() {
 
             // Move the following logic inside this function
             const name = response.data.length > 0 ? response.data[0].name : '';
-            // const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=6c7f85c31f064e2e9836da10c47b919f&name=" + name;
-            const avatarUrl = "https://avatars.abstractapi.com/df1/?api_key=klayani&name=" + name;
+            console.log(name);
+            const avatarUrl = "https://avatars.abstractapi.com/v1/?api_key=6c7f85c31f064e2e9836da10c47b919f&name=" + name;
+            // const avatarUrl = "https://avatars.abstractapi.com/df1/?api_key=klayani&name=" + name;
             setProfilePicUrl(avatarUrl);
         } catch (error) {
             setUsers([]);
@@ -33,8 +38,9 @@ function Fdashboard() {
     };
 
     useEffect(() => {
-        fetchName("bhagya07");
-    }, []);
+        fetchName(location.username);
+        console.log("ae bhaii: "+ location.username)
+    }, [location]);
 
     return (
         <div className='Fdashboard'>
@@ -70,8 +76,14 @@ function Fdashboard() {
                     </ul>
                 </div>
             </div>
+                <div>
+                    <button onClick={() =>setStatus('approved')}> Approved</button>
+                    <button onClick={() =>setStatus('pending')}> Pending</button>
+                    <button onClick={() =>setStatus('rejected')}> rejected</button>
+
+                </div>
                 <div className='inbox-container'>
-                    <Inbox dummyList={dummyList} />
+                    <Inbox status={status} />
                 </div>
             </div>
 

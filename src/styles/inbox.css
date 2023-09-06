@@ -1,12 +1,41 @@
-.application{
-    color: black;
-    background-color:  white;
+/* Reset default margin and padding */
+.application,
+.details {
+  margin: 1rem;
+  padding: 0 1rem 0 1rem;
+  box-sizing: border-box;
+}
 
-    width: 96%;
-    align-items: end;
+.application {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    height: 4rem;
-    margin: 1rem 1rem 1rem 1rem;
-    border: 1px solid #C3DBC5;
-    border-radius: 20px;
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+}
+
+.date {
+  font-size: 14px;
+  color: #999999;
+  margin-right: 12px;
+}
+
+.stats {
+  font-size: 14px;
+  color: #007bff; /* Blue color for status */
 }

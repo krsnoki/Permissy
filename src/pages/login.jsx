@@ -8,16 +8,7 @@ import axios from 'axios';
 function Login() {
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState('');
-
-    const handleRedirect = (role) => {
-        
-
-        if (role === 1) {
-            navigate('/faculty-dashboard');
-        } else if (role === 2) {
-            navigate('/student-dashboard');
-        }
-    };
+``
 
     const formik = useFormik({
         initialValues: {
@@ -27,12 +18,19 @@ function Login() {
         onSubmit: async values => {
             try {
                 const response = await axios.post('http://localhost:3000/auth/login', values);
-                const { role } = response.data; 
-                alert("role");
+                const userData = response.data.payload; 
+                alert("userdata: " + userData.role);
+                console.log(userData);
                 // Assuming the API returns the role
-                handleRedirect(role);
+                if (userData.role === "faculty") {
+                    navigate('/faculty-dashboard', { userData });
+                } else if (userData.role === "student") {
+                    navigate('/student-dashboard', { userData });
+                }
+            
             } catch (error) {
-                setErrorMessage('Invalid credentials. Please try again.'); // Display error message
+                setErrorMessage('Invalid credentials. Please try again.' + error); 
+                console.log(error)// Display error message
             }
         }
     });
