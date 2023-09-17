@@ -1,5 +1,5 @@
 import '../styles/global.css'
-import {  Router } from 'react-router-dom'
+import {  Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { debounce } from '../assets/helpers';
 
@@ -32,24 +32,22 @@ function Navbar() {
     top: visible ? '0' : '-60px', // Use 'top' CSS property to control visibility
   };
 
-  return (
-    <Router>
+return (
     <div className='nav' style={{navbarStyles}}>
     <div className='navbar-container'>
       <ul className='item-list'>
-        <li><a to='/' style = {LinkStyle}>Home</a></li>
-        <li><a href='#about' style={LinkStyle}>About</a></li>
-        <li><a to='/login' style={LinkStyle}>Login</a></li>
+        <li><Link to='/' style = {LinkStyle}>Home</Link></li>
+        <li><Link to='/about' style={LinkStyle}>About</Link></li>
+        <li><Link to='/login' style={LinkStyle}>Login</Link></li>
         <li className='last-child'></li>
       </ul>
     </div>
-   
-    </div>
-    </Router>
-  );
+    
 
-  
+    </div>
+  );
 }
+
 
 export default Navbar;
 
