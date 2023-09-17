@@ -1,9 +1,11 @@
 import '../styles/about.css'
 import { useParallax } from 'react-scroll-parallax';
+import { useParams } from 'react-router-dom';
 
 const  About=()=> {
 
   const {ref} = useParallax({ speed: 10})
+  const { id } = useParams();
   return (
     <div className='about' id='about' ref={ref}>
     <div className="about-container">

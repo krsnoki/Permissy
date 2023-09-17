@@ -2,13 +2,13 @@ import '../styles/global.css';
 import '../styles/login.css';
 import { useFormik } from 'formik';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios'; 
 
 function Login() {
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState('');
-``
+    const { id } = useParams();
 
     const formik = useFormik({
         initialValues: {
