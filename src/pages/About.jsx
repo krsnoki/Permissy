@@ -1,15 +1,23 @@
 import '../styles/about.css'
-import { useParallax } from 'react-scroll-parallax';
-import { useParams } from 'react-router-dom';
 
-const  About=()=> {
 
-  const {ref} = useParallax({ speed: 10})
-  const { id } = useParams();
+const About = () => {
+
   return (
-    <div className='about' id='about' ref={ref}>
-    <div className="about-container">
-      <h1>About Permissy</h1>
+    <div className='about' id='about' >
+
+      <div className='about-heading'>
+        <h1>About Permissy</h1>
+      </div>
+      <div className="about-container">
+      </div>
+    </div>
+  );
+}
+
+export default About;
+/*
+
       <p>
         Permissy is a platform designed to help students get connected with authorities online
         and make the process of applying for various kinds of permissions easier and faster,
@@ -35,9 +43,4 @@ const  About=()=> {
         <li>Environmentally Friendly: Reduce paper waste by going digital.</li>
       </ul>
       </div>
-    </div>
-    </div>
-  );
-}
-
-export default About;
+*/

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 import "../styles/inbox.css";
+import { dummyList } from "../assets/lists/dummyApplications";
 
 const Inbox = ({ status }) => {
   const [applications, setApplications] = useState([]);

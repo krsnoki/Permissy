@@ -12,4 +12,4 @@ export const dummyList = [
     { title: "SD Lab Access", date: "06/08/23", status: "pending"},  
     { title: "Site Access", date: "06/08/23", status: "pending"},
     { title: "Techkriti", date: "26/08/23", status: "pending"},
-]
+] 

@@ -77,9 +77,9 @@ function Fdashboard() {
                 </div>
             </div>
                 <div>
-                    <button onClick={() =>setStatus('approved')}> Approved</button>
-                    <button onClick={() =>setStatus('pending')}> Pending</button>
-                    <button onClick={() =>setStatus('rejected')}> rejected</button>
+                    <button onClick={() =>setStatus('Approved')}> Approved</button>
+                    <button onClick={() =>setStatus('Pending')}> Pending</button>
+                    <button onClick={() =>setStatus('Rejected')}> rejected</button>
 
                 </div>
                 <div className='inbox-container'>

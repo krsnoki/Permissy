@@ -1,6 +1,7 @@
 import '../styles/global.css'
 import {  Link } from 'react-router-dom'
 import { useState, useEffect } from 'react';
+import '../styles/navbar.css';
 import { debounce } from '../assets/helpers';
 
 function Navbar() {
@@ -36,9 +37,9 @@ return (
     <div className='nav' style={{navbarStyles}}>
     <div className='navbar-container'>
       <ul className='item-list'>
-        <li><Link to='/' style = {LinkStyle}>Home</Link></li>
-        <li><Link to='/about' style={LinkStyle}>About</Link></li>
-        <li><Link to='/login' style={LinkStyle}>Login</Link></li>
+        <li><Link to='#hero' style = {LinkStyle}>Home</Link></li>
+        <li><Link to='#about' style={LinkStyle}>About</Link></li>
+        <li><Link to='#login' style={LinkStyle}>Login</Link></li>
         <li className='last-child'></li>
       </ul>
     </div>
@@ -53,5 +54,6 @@ export default Navbar;
 
 const LinkStyle = {
   color: 'white',
-  textDecoration: 'none'
+  textDecoration: 'none',
+  backgroundColor: '#070707'
 };

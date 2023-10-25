@@ -2,13 +2,12 @@ import '../styles/global.css';
 import '../styles/login.css';
 import { useFormik } from 'formik';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useParams, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import axios from 'axios'; 
 
 function Login() {
     const navigate = useNavigate();
     const [errorMessage, setErrorMessage] = useState('');
-    const { id } = useParams();
 
     const formik = useFormik({
         initialValues: {
@@ -47,7 +46,7 @@ function Login() {
 
     return (
         <>
-            <div className='login-container' ref={scrollRef}>
+            <div className='login-container' ref={scrollRef} id='login'>
                 <div className='login-container'>
                     <div className='login-area'>
                         <div className='loginhead'> <h1>Login</h1></div>

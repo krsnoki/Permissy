@@ -19,60 +19,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
-/* ================================= Navbar css starts ================================== */
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  border-radius: 14px;
-  align-items: center;
-
-  width: 97%;
-  height: 8vh;
-  margin-top: 2vh;
-  background-color: #070707;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* box-shadow: rgb(117, 116, 116) 0px 5px 15px; */
-  padding: 10px 5px;
-  opacity: 70%;
-  color: white;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.item-list {
-  display: flex;
-  flex-direction: row;
-}
-
-.item-list li {
-  margin: 0 2rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  font-size: 18pt;
-  font-weight: bolder;
-  font-family: "Geologica", sans-serif;
-}
-
-.item-list li:last-child {
-  margin-right: 4vw;
-}
-
 /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 
 /* ================================= Navbar css ends================================== */
